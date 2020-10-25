@@ -108,7 +108,7 @@ system("clear");
 printf("Hello student\n");
 // Call integer work
 <<<<<<< HEAD
-myint();
+//myint();
 =======
 //myint();
 >>>>>>> 2430832ed3e9f8541cf60de438d35fdaf9edb340
