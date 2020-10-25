@@ -12,9 +12,9 @@ p = &a;
 a=9;
 
 printf("Value of a is %d\n", a);
-printf("Address of a is %d\n", p);
+printf("Address of a is %p\n", p);
 printf("Value of a that p points to is %d\n", *p);
-printf("Address of p is %d\n", &p);
+printf("Address of p is %p\n", &p);
 
 *p = *p + 1;
 printf("Value of a after adding 1 to *p is %d\n", a);
@@ -35,8 +35,8 @@ void myarray()
   int i=0;
   int *p;
   p = &A[0];
-  printf("Value in p is %d\n", p);
-  printf("Value in p+1 is %d\n", p+1);
+  printf("Value in p is %p\n", p);
+  printf("Value in p+1 is %p\n", p+1);
   printf("Value p+1 points to is %d\n", *(p+1));
   printf("which is %d same as value of A[1]\n", A[1]);
 
@@ -44,9 +44,9 @@ void myarray()
   {
 //    printf("I is %d\n", i);
     printf("Value stored in Array member %d is %d\n", i, A[i]);
-    printf("Address of Array member %d is %d\n", i, &A[i]);
+    printf("Address of Array member %d is %p\n", i, &A[i]);
     printf("Value stored in Array member %d is %d\n", i, *(A+i));
-    printf("Address of Array member %d is %d\n", i, A+i);
+    printf("Address of Array member %d is %p\n", i, A+i);
   }
 }
 
